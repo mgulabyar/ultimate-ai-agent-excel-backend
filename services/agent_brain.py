@@ -48,16 +48,6 @@
 #                         "fontColor": "#HEX",
 #                         "bold": true,
 #                         "applyBorders": true,
-#                         "fontSize": 12
-#                     }}
-#                 }}
-#             ],
-#             "message": "Detailed, professional explanation of the work done."
-#         }}
-
-#         STRICT RULE: Only return JSON. No conversation outside the block.
-#         """
-
 
 import openai
 import os
