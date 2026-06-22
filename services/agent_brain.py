@@ -27,11 +27,6 @@
 #         3. COORDINATES: ALWAYS use A1 notation (e.g., A1:C10). NEVER use names like "HeaderRange".
 #         4. SELECTIVE UPDATES: If the user says "Change X", find X in the Snapshot and update only that cell.
 
-#         KNOWLEDGE BASE (EXCEL MASTER):
-#         - FORMATTING: Backgrounds, Fonts, Bold, Italics, Number Formats (Currency, Percentage).
-#         - FORMULAS: VLOOKUP, XLOOKUP, INDEX-MATCH, SUMIFS, COUNTIFS, LAMBDA.
-#         - CLEANING: Remove duplicates, trim spaces, change case (Proper/Upper/Lower).
-#         - ORGANIZATION: Add filters, freeze panes, auto-fit columns.
 
 
 import openai
