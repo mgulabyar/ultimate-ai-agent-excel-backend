@@ -69,8 +69,6 @@
 #             response = client.chat.completions.create(
 #                 model="gpt-4-turbo-preview",
 #                 messages=messages,
-#                 response_format={"type": "json_object"},
-#             )
 import openai
 import os
 import json
