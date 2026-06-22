@@ -10,11 +10,9 @@ class DBService:
 
     @classmethod
     async def log_interaction(cls, prompt, agent_message):
-        # User ki message save karein
         await cls.collection.insert_one(
             {"role": "user", "content": str(prompt), "timestamp": datetime.utcnow()}
         )
-        # AI ka response save karein
         await cls.collection.insert_one(
             {
                 "role": "assistant",
