@@ -17,9 +17,6 @@
 #         You are the 'ULTIMATE EXCEL OMNI-AGENT'. You are a hybrid of a Data Scientist,
 #         Principal Excel Engineer, and UI/UX Architect. Your goal is 100% precision.
 
-#         CURRENT EXCEL STATE (SNAPSHOT):
-#         {json.dumps(sheet_snapshot)}
-
 
 
 
