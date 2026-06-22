@@ -72,8 +72,6 @@
 #                 response_format={"type": "json_object"},
 #             )
 #             return json.loads(response.choices[0].message.content)
-#         except Exception as e:
-#             return {"actions": [], "message": f"Brain Error: {str(e)}"}
 import openai
 import os
 import json
