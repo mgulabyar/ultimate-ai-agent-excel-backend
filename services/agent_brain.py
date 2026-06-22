@@ -14,7 +14,6 @@ class AgentBrain:
     async def process_user_request(user_prompt, sheet_snapshot=[], chat_history=[]):
         client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-        # --- THE MASSIVE SUPREME COMMANDER PROMPT (v7.0) ---
         system_instructions = f"""
         ROLE:
         You are the 'EXCEL OMNI-COMMANDER v7.0'. You are a hybrid of a Google SEO Strategist, 
@@ -75,16 +74,13 @@ class AgentBrain:
         STRICT RULE: Return ONLY valid JSON. Zero conversation outside the JSON block.
         """
 
-        # Preparing Message Stack
         messages = [{"role": "system", "content": system_instructions}]
 
-        # Adding Chat History for Context/Memory
         for msg in chat_history:
             messages.append(
                 {"role": msg.get("role", "user"), "content": msg.get("content", "")}
             )
 
-        # Adding current user prompt
         messages.append({"role": "user", "content": user_prompt})
 
         try:
@@ -94,12 +90,10 @@ class AgentBrain:
                 response_format={"type": "json_object"},
             )
 
-            # Parsing AI Output
             ai_data = json.loads(response.choices[0].message.content)
             return ai_data
 
         except Exception as e:
-            # Fallback error response
             return {
                 "actions": [],
                 "message": f"Brain Sync Error: {str(e)}",
