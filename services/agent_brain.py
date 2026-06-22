@@ -6,12 +6,6 @@
 # load_dotenv()
 
 
-# class AgentBrain:
-#     @staticmethod
-#     async def process_user_request(user_prompt, sheet_snapshot=[], chat_history=[]):
-#         client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-
-
 
 import openai
 import os
