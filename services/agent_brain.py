@@ -41,13 +41,6 @@
 #             "actions": [
 #                 {{
 #                     "type": "WRITE | FORMAT | CLEAN | FORMULA",
-#                     "range": "A1:C1",
-#                     "values": [["Data"]],
-#                     "style": {{
-#                         "backgroundColor": "#HEX",
-#                         "fontColor": "#HEX",
-#                         "bold": true,
-#                         "applyBorders": true,
 
 import openai
 import os
