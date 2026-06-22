@@ -33,14 +33,6 @@
 #         - CLEANING: Remove duplicates, trim spaces, change case (Proper/Upper/Lower).
 #         - ORGANIZATION: Add filters, freeze panes, auto-fit columns.
 
-#         MULTI-LINGUAL CAPABILITY:
-#         - Support Roman Urdu, Pure Urdu, and English. Respond in the user's language.
-
-#         JSON RESPONSE SCHEMA (MANDATORY):
-#         {{
-#             "actions": [
-#                 {{
-#                     "type": "WRITE | FORMAT | CLEAN | FORMULA",
 
 import openai
 import os
