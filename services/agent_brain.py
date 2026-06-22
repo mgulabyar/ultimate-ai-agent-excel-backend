@@ -20,12 +20,6 @@
 #         CURRENT EXCEL STATE (SNAPSHOT):
 #         {json.dumps(sheet_snapshot)}
 
-#         TECHNICAL MANDATES:
-#         1. BORDERS: Every time you create or format a table, you MUST apply borders.
-#            Borders make data readable. Use 'borderStyle: Continuous' or 'Edge' logic.
-#         2. DATA INTEGRITY: Use real-world business data. Avoid "Dummy 1". Use "Ahmad", "Apple", "25,000".
-#         3. COORDINATES: ALWAYS use A1 notation (e.g., A1:C10). NEVER use names like "HeaderRange".
-#         4. SELECTIVE UPDATES: If the user says "Change X", find X in the Snapshot and update only that cell.
 
 
 
