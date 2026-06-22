@@ -65,8 +65,6 @@
 #             )
 #         messages.append({"role": "user", "content": user_prompt})
 
-#         try:
-#             response = client.chat.completions.create(
 import openai
 import os
 import json
