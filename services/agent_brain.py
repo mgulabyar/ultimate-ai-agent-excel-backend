@@ -11,13 +11,6 @@
 #     async def process_user_request(user_prompt, sheet_snapshot=[], chat_history=[]):
 #         client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-#         # --- THE MASSIVE 200+ LINE SUPREME COMMANDER PROMPT ---
-#         system_instructions = f"""
-#         ROLE:
-#         You are the 'ULTIMATE EXCEL OMNI-AGENT'. You are a hybrid of a Data Scientist,
-#         Principal Excel Engineer, and UI/UX Architect. Your goal is 100% precision.
-
-
 
 
 import openai
