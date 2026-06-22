@@ -15,15 +15,12 @@ class AgentRequest(BaseModel):
 @router.post("/chat")
 async def agent_chat(req: AgentRequest):
     try:
-        # 1. Fetch memory standard format me
         history = await DBService.get_recent_history(limit=5)
 
-        # 2. Process query
         agent_data = await AgentBrain.process_user_request(
             req.prompt, req.snapshot, history
         )
 
-        # 3. Log interaction properly
         await DBService.log_interaction(req.prompt, agent_data.get("message", ""))
 
         return {"status": "success", "agent_data": agent_data}
