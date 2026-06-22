@@ -58,12 +58,6 @@
 #         STRICT RULE: Only return JSON. No conversation outside the block.
 #         """
 
-#         messages = [{"role": "system", "content": system_instructions}]
-#         for msg in chat_history:
-#             messages.append(
-#                 {"role": msg.get("role", "user"), "content": msg.get("content", "")}
-#             )
-#         messages.append({"role": "user", "content": user_prompt})
 
 import openai
 import os
